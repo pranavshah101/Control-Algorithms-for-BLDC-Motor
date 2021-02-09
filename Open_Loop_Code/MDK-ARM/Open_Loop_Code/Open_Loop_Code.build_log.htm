@@ -1,0 +1,129 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Shah PRANAV, HP Inc., LIC=LJW8T-RDPSU-CZAWV-PHFGE-VLY2B-6QCER
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.25.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+C:\Users\PRANAV\Desktop\Final_Year_Project\Open_Loop_Code\MDK-ARM\Open_Loop_Code.uvprojx
+Project File Date:  01/30/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Open_Loop_Code'
+compiling main.c...
+../Inc/function.h(9): warning:  #1295-D: Deprecated declaration MX_TIM2_Init - give arg types
+  void MX_TIM2_Init();
+../Inc/function.h(10): warning:  #1295-D: Deprecated declaration MX_TIM3_Init - give arg types
+  void MX_TIM3_Init();
+../Inc/function.h(11): warning:  #1295-D: Deprecated declaration MX_TIM4_Init - give arg types
+  void MX_TIM4_Init();
+../Inc/function.h(13): warning:  #1295-D: Deprecated declaration encoders_init - give arg types
+  void encoders_init();
+../Inc/function.h(14): warning:  #1295-D: Deprecated declaration encoders_define_home - give arg types
+  void encoders_define_home();
+../Inc/function.h(16): warning:  #1295-D: Deprecated declaration PWM_Init - give arg types
+  void PWM_Init();
+../Inc/function.h(18): warning:  #1-D: last line of file ends without a newline
+  void voltage_vector(float theta ,float omega,int *vv);
+../Src/main.c(66): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(GPIOB,GPIO_PIN_7,1);		
+../Src/main.c(76): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(GPIOB,GPIO_PIN_7,0);
+../Src/main.c: 9 warnings, 0 errors
+compiling function.c...
+../Inc/function.h(9): warning:  #1295-D: Deprecated declaration MX_TIM2_Init - give arg types
+  void MX_TIM2_Init();
+../Inc/function.h(10): warning:  #1295-D: Deprecated declaration MX_TIM3_Init - give arg types
+  void MX_TIM3_Init();
+../Inc/function.h(11): warning:  #1295-D: Deprecated declaration MX_TIM4_Init - give arg types
+  void MX_TIM4_Init();
+../Inc/function.h(13): warning:  #1295-D: Deprecated declaration encoders_init - give arg types
+  void encoders_init();
+../Inc/function.h(14): warning:  #1295-D: Deprecated declaration encoders_define_home - give arg types
+  void encoders_define_home();
+../Inc/function.h(16): warning:  #1295-D: Deprecated declaration PWM_Init - give arg types
+  void PWM_Init();
+../Inc/function.h(18): warning:  #1-D: last line of file ends without a newline
+  void voltage_vector(float theta ,float omega,int *vv);
+..\Src\function.c(194): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	*r_theta=(encoder_counts)*0.003066;   //Theta is converted to rad
+..\Src\function.c(201): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	while(*e_theta >6.28)
+..\Src\function.c(203): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		 *e_theta=*e_theta-6.28;
+..\Src\function.c(207): warning:  #940-D: missing return statement at end of non-void function "encoder" 
+   }
+..\Src\function.c(227): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(theta>=0 && theta<0.5235)
+..\Src\function.c(232): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	else if(theta>=0.5235 && theta<1.5707)
+..\Src\function.c(232): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	else if(theta>=0.5235 && theta<1.5707)
+..\Src\function.c(237): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	else if(theta>=1.5707 && theta<2.61799)
+..\Src\function.c(237): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	else if(theta>=1.5707 && theta<2.61799)
+..\Src\function.c(242): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	else if(theta>=2.61799 && theta<3.665)
+..\Src\function.c(242): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	else if(theta>=2.61799 && theta<3.665)
+..\Src\function.c(247): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	else if(theta>=3.6651 && theta<4.712)
+..\Src\function.c(247): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	else if(theta>=3.6651 && theta<4.712)
+..\Src\function.c(251): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	else if(theta>=4.712  && theta<5.7595)
+..\Src\function.c(251): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	else if(theta>=4.712  && theta<5.7595)
+..\Src\function.c(255): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	else if(theta>=5.7595 && theta<6.28)
+..\Src\function.c(255): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	else if(theta>=5.7595 && theta<6.28)
+..\Src\function.c: 24 warnings, 0 errors
+linking...
+Program Size: Code=8196 RO-data=504 RW-data=44 ZI-data=1284  
+FromELF: creating hex file...
+"Open_Loop_Code\Open_Loop_Code.axf" - 0 Error(s), 33 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F7xx_DFP.2.13.0.pack
+                Keil.STM32F7xx_DFP.2.13.0
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Open_Loop_Code
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:15
+</pre>
+</body>
+</html>

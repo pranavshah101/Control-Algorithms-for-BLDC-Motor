@@ -1,0 +1,27 @@
+--cpu Cortex-M7.fp.sp
+"open_loop_code\startup_stm32f746xx.o"
+"open_loop_code\function.o"
+"open_loop_code\main.o"
+"open_loop_code\stm32f7xx_it.o"
+"open_loop_code\stm32f7xx_hal_msp.o"
+"open_loop_code\stm32f7xx_hal_cortex.o"
+"open_loop_code\stm32f7xx_hal_tim.o"
+"open_loop_code\stm32f7xx_hal_tim_ex.o"
+"open_loop_code\stm32f7xx_hal_rcc.o"
+"open_loop_code\stm32f7xx_hal_rcc_ex.o"
+"open_loop_code\stm32f7xx_hal_flash.o"
+"open_loop_code\stm32f7xx_hal_flash_ex.o"
+"open_loop_code\stm32f7xx_hal_gpio.o"
+"open_loop_code\stm32f7xx_hal_dma.o"
+"open_loop_code\stm32f7xx_hal_dma_ex.o"
+"open_loop_code\stm32f7xx_hal_pwr.o"
+"open_loop_code\stm32f7xx_hal_pwr_ex.o"
+"open_loop_code\stm32f7xx_hal.o"
+"open_loop_code\stm32f7xx_hal_i2c.o"
+"open_loop_code\stm32f7xx_hal_i2c_ex.o"
+"open_loop_code\stm32f7xx_hal_exti.o"
+"open_loop_code\system_stm32f7xx.o"
+--library_type=microlib --strict --scatter "Open_Loop_Code\Open_Loop_Code.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Open_Loop_Code.map" -o Open_Loop_Code\Open_Loop_Code.axf
