@@ -1,0 +1,9 @@
+function.c:8:7:MX_TIM2_Init	48	static
+function.c:61:7:MX_TIM3_Init	56	static
+function.c:110:7:MX_TIM4_Init	48	static
+function.c:167:6:encoders_init	8	static
+function.c:174:6:encoders_define_home	4	static
+function.c:180:7:encoder	40	static
+function.c:248:6:PWM_Init	8	static
+function.c:260:6:voltage_vector	24	static
+function.c:301:6:PWM_Generation	16	static
